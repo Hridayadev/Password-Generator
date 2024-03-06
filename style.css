@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: #4a69bd;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.inputNum {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.inputBoxm {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.inputBox {
+    flex: 1; 
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.copy {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.inputBox:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4a69bd;
+}
+.genBtn {
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #42b883;
+    color: #ffffff;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.genBtn:hover {
+    background-color: #34a17f;
+}
+.hidden{
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    color: #34a17f;
+}
+.show{
+    opacity: 1;
+}
+.notError{
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    color: red;
+}
+.errorXa{
+    opacity: 1;
+}
